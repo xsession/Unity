@@ -60,6 +60,8 @@ endif()
 add_library(${PROJECT_NAME} STATIC)
 add_library(${PROJECT_NAME}::framework ALIAS ${PROJECT_NAME})
 
+target_compile_definitions(${PROJECT_NAME} PUBLIC UNITY_SUPPORT_64)
+
 # Includes ---------------------------------------------------------------------
 include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
